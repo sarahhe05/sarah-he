@@ -1,0 +1,340 @@
+/*reset page spacing*/
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  /*style navbar*/
+  nav {
+    text-align: center;
+    font-size: 16pt;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+    background-color: #152A51;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: #cbdee2;
+    padding: 14px;
+    font-family: 'Century Gothic';
+  }
+  
+  li a:hover {
+    color: #152A51;
+    background-color: #f8f9d7;
+  }
+  
+  body {
+   background-color: #cbdee2;
+  }
+  
+  h1 {
+    color: #152A51;
+    font-size: 35pt;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Century Gothic';
+  }
+  
+  h2 {
+    text-align: left;
+    color: #152A51;
+    font-size: 20pt;
+    padding-top: 10px;
+    font-family: 'Century Gothic';
+  }
+  
+  h3{
+    text-align: left;
+    color: #152A51;
+    font-size: 10pt;
+    font-family: 'Century Gothic';
+  }
+
+  p {
+    font-size: 12pt;
+    font-family: 'Century Gothic';
+    color: #152A51;
+  }
+
+  a {
+    color: #152A51;
+  }
+
+  a:hover {
+    color: #faf0c3;
+    text-decoration: underline; /* Optional: Add underline on hover */
+  }
+
+  /*home*/
+  #home-section{
+    background-image: url('./images/header.jpg');
+    background-position: 50% 90%;
+    background-size: cover;
+    }
+
+  #hello{
+    padding-top: 100px;
+    font-size: 50pt;
+    text-align: center;
+  }
+
+  #intro{
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .contacts-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 250px;
+  }
+  
+  #contact-me {
+    justify-content: left;
+    margin-left: 30%;
+  }
+
+  .contacts-button{
+    padding: 0;
+    border: none;
+    background: none;
+  }
+
+  .email, .github, .linkedin, .resume {
+    display: block;
+    width: 70px;
+    height: 70px;
+  }
+
+  .email:hover {
+    content: url('./images/email_hover.png');
+    transition: all .2s ease-in-out; 
+    transform: scale(1.2);
+  }
+  
+  .github:hover {
+    content: url('./images/github_hover.png');
+    transition: all .2s ease-in-out; 
+    transform: scale(1.2);
+  }
+  
+  .linkedin:hover {
+    content: url('./images/linkedin_hover.png');
+    transition: all .2s ease-in-out; 
+    transform: scale(1.2);
+  }
+
+  .resume:hover {
+    content: url('./images/resume_hover.png');
+    transition: all .2s ease-in-out; 
+    transform: scale(1.2);
+  }
+
+/*technical-work*/
+  #technical-work-section{
+    padding-top:35px;
+    padding-bottom:35px;
+  }
+
+  #technical-work-header{
+    margin-left:20%
+}
+
+  .technical-row{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  #technical-title{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #technical-subtitle{
+    width: 100%;
+    object-fit: cover;
+    padding-bottom: 15px;
+  }
+
+  #technical-description{
+    width: 100%;
+    object-fit: cover;
+    padding-bottom: 15px;
+  }
+
+  .technical-column1{
+    object-fit: cover;
+  }
+
+  .technical-photo-box {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    }
+
+  .technical-button {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the button */
+  }
+
+  .technical-photo {
+    position: relative;
+    width: auto ; /* Make sure the images fill the container */
+    top: 0;
+    left: 0;
+  }
+
+  #technical-photo{
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+  }
+
+  .technical-button{
+    padding: 0;
+    border: none;
+    background: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  #technical-button{
+    width: 50px;
+  }
+
+  .technical-photo-box:hover .technical-button{
+    opacity: 1;
+  }
+
+  .technical-photo-box:hover .technical-photo{
+    filter: blur(2px);
+  }
+
+  .technical-column1:hover #technical-title{
+    transition: all .2s ease-in-out; 
+    color: #faf0c3
+  }
+
+  .technical-column2:hover #technical-title{
+    transition: all .2s ease-in-out; 
+    color: #faf0c3
+  }
+
+  /*other*/
+  #other-section{
+    padding-top:35px;
+    padding-bottom:35px;
+  }
+
+  #other-header{
+    margin-left: 20%;
+    padding-bottom: 15px;
+  }
+
+  #photography-header{
+    margin-left: 20%;
+    padding-bottom: 15px;
+  }
+
+  #photography-intro {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 15px;
+  }
+  
+  .photo-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    gap: 10px;
+  }
+
+  #photo-column1{
+    width: 100%;
+    object-fit: cover;
+  }
+ 
+  #photo-column1:hover {
+    transition: all .2s ease-in-out; 
+    transform: scale(1.2);
+  }
+
+  #photo-column2{
+    width: 100%;
+    object-fit: cover;
+  }
+ 
+  #photo-column2:hover {
+    transition: all .2s ease-in-out; 
+    transform: scale(1.2);
+  }
+
+  #photo-column3{
+    width: 100%;
+    object-fit: cover;
+  }
+ 
+  #photo-column3:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+  }
+
+  .home-img {
+    width: 100%;
+    object-fit: cover;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  /*footer*/
+  #footer-section{
+    background-color: #152A51
+    }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+
+  .footer-button{
+    padding: 0;
+    border: none;
+    background: none;
+  }
+
+  #footer-icon{
+    width: 35px;
+    height: 35px;
+  }
