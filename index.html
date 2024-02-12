@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"/>
+    <script src="extra.js" defer></script>
     <title>Sarah He</title>
 
 </head>
@@ -19,16 +20,16 @@
       </nav>
   
       <!--home page-->
-        <section id='home-section'>
+      <section id='home-section'>
 
-          <h1 id="hello">Hello! I am Sarah He :D </h1>
-          <h2 id='intro'>Data Science first-year at UCSD</h2>
+        <h1 id="hello">Hello! I am Sarah He :D </h1>
+        <h2 id='intro'>Data Science first-year at UCSD</h2>
 
         <!--contact info-->
         <div class="contacts-container">
         
           <!--email-->
-          <a href='mailto:yih092@ucsd.edu'> <button class="contacts-button" >
+          <a href='mailto:yih092@ucsd.edu'> <button class="contacts-button">
             <img src='./images/email_default.png' alt='Email' class="email"></a></button>
           
           <!--github-->
@@ -44,14 +45,14 @@
               <img src='./images/resume_default.png' alt='Resume' class="resume"></a></button>
           
         </div>
-    </section>
+      </section>
     
       <!--technical work-->
       <section id='technical-work-section'>
 
-      <h1 id='technical-work-header'> Technical Work </h1>
+        <h1 id='technical-work-header'> Technical Work </h1>
        
-        <div class='technical-row'>
+          <div class='technical-row'>
             <!--The Guardian Data-->
             <div class='technical-column1'>
                 <h2 id='technical-title'> The Guardian </h2>
@@ -82,10 +83,9 @@
                 <img src='./images/link_blue.png' id='technical-button'></a></button>
               </div>
             </div>
-        </div>
+          </div>
 
-        
-        <div class='technical-row'>
+          <div class='technical-row'>
             <!--Only One Ocean-->
             <div class='technical-column1'>
                 <h2 id='technical-title'> Only One Ocean </h2>
@@ -104,41 +104,121 @@
   
       </section>
 
-    <!--other-->
-    <section id='other-section'>
-    <h1 id='other-header'> Other </h1>
-    <h2 id='photography-header'> Photography </h2>
-      <p id='photography-intro'> I'm a photographer for UCSD's student newspaper 
-      <a href='https://ucsdguardian.org/staff_name/sarah-he/'>The Guardian</a>
-      staff. My passion for photography and student journalism stems from my former
-      participation as Photography Editor of Temple City High School's Templar Yearbook.</p> 
+      <!--other-->
+      <section id='other-section'>
+      <h1 id='other-header'> Other </h1>
+        
+        <h2 id='photography-header'> Photography </h2>
+          <p id='photography-intro'> I'm a photographer for UCSD's student newspaper 
+          <a href='https://ucsdguardian.org/staff_name/sarah-he/'>The Guardian</a>
+        staff. My passion for photography and student journalism stems from my former
+        participation as Photography Editor of Temple City High School's Templar Yearbook.</p> 
+
+        <div class='photo-container'>
+          <div class='photo-column1'>
+            <img src = './images/dusk.jpg' id='photo-column1' alt='dusk'>
+            <img src = './images/dreamy-moonlight.jpg' id='photo-column1' alt="dreamy moonlight">
+            <img src = './images/worlds.jpg' id='photo-column1' alt="worlds">
+          </div>
+        
+          <div class='photo-column2'>
+            <img src = './images/UAW-Rally.jpg' id='photo-column1' alt="UAW Rally">
+            <img src = './images/crow.jpg' id='photo-column1' alt="crow">
+            <img src = './images/Lyn-Lapid.jpg' id='photo-column1' alt='Lyn Lapid concert'>
+          </div>
+
+          <div class='photo-column3'>
+            <img src = './images/Eric-Nam-1.jpg' id='photo-column1' alt="Eric Nam concert">
+            <img src = './images/break-of-light.jpg' id='photo-column1' alt='break of light'>
+            <img src = './images/Eric-Nam-2.jpg' id='photo-column1' alt="Eric Nam concert">
+          </div>
+        </div>
       
+        <button class="access-the-guardian-button" onclick="toggleGuardian()"><p class="access-the-guardian-button_text">
+        Click to see more of my work with The Guardian!</p></button>
 
+      </section>
 
-      <div class='photo-container'>
-        <div class='photo-column1'>
-          <img src = './images/dusk.jpg' id='photo-column1' alt='dusk'>
-          <img src = './images/dreamy-moonlight.jpg' id='photo-column1' alt="dreamy moonlight">
-          <img src = './images/worlds.jpg' id='photo-column1' alt="worlds">
+      <!--the guardian-->
+      <section id='the-guardian-section'>
+        <div class='guardian-row'>
+          
+          <!--paper-->
+          <div class='guardian-column1'>
+            <div class='guardian-photo-box'>
+              <p id='guardian-description'><b>February 12, 2024</b></p>
+              <img src='./guardian/09_021224A&E.jpg' class='guardian-paper'>
+            </div>
+          </div>
+
+          <!--photos-->
+          <div class='guardian-column2'>
+            <div class='guardian-photo-box'>
+              <img src = './guardian/Cut Up The Guardian - Photo Cred - Sarah He1.jpg' class='guardian-photo' alt="Cut Up The Guardian">
+              <img src = './guardian/Cut Up The Guardian - Photo Cred - Sarah He2.jpg' class='guardian-photo' alt="Cut Up The Guardian">
+              <img src = './guardian/Cut Up The Guardian - Photo Cred - Sarah He3.jpg' class='guardian-photo' alt="Cut Up The Guardian">
+            </div>
+          </div>
+
+          <!--paper-->
+          <div class='guardian-column1'>
+            <div class='guardian-photo-box'>
+              <p id='guardian-description'><b>January 22, 2024</b></p>
+              <img src='./guardian/01_012224NEWS.jpg' class='guardian-paper'>
+            </div>
+          </div>
+
+          <!--photos-->
+          <div class='guardian-column2'>
+            <div class='guardian-photo-box'>
+              <img src = './guardian/UAW for Suresh Photo Cred - Sarah He1.jpg' class='guardian-photo' alt="UAW Rally">
+              <img src = './guardian/UAW for Suresh Photo Cred - Sarah He4.jpg' class='guardian-photo' alt="UAW Rally">
+              <img src = './guardian/UAW for Suresh Photo Cred - Sarah He6.jpg' class='guardian-photo' alt="UAW Rally">
+            </div>
+          </div>
+
         </div>
-        
-        <div class='photo-column2'>
-          <img src = './images/UAW-Rally.jpg' id='photo-column1' alt="UAW Rally">
-          <img src = './images/crow.jpg' id='photo-column1' alt="crow">
-          <img src = './images/Lyn-Lapid.jpg' id='photo-column1' alt='Lyn Lapid concert'>
-        </div>
 
-        <div class='photo-column3'>
-          <img src = './images/Eric-Nam-1.jpg' id='photo-column1' alt="Eric Nam concert">
-          <img src = './images/break-of-light.jpg' id='photo-column1' alt='break of light'>
-          <img src = './images/Eric-Nam-2.jpg' id='photo-column1' alt="Eric Nam concert">
-        </div>
-        
-      </div>
-    </section>
+        <div class='guardian-row'>
+          <!--paper-->
+          <div class='guardian-column1'>
+            <div class='guardian-photo-box'>
+              <p id='guardian-description'><b>November 27, 2023</b></p>
+              <img src='./guardian/01_112723NEWS.jpg' class='guardian-paper'>
+            </div>
+          </div>
 
-    <!--footer-->
-    <section id='footer-section'>
+          <!--photos-->
+          <div class='guardian-column2'>
+            <div class='guardian-photo-box'>
+              <img src = './guardian/AS Meeting Photo Cred - Sarah He1.jpg' class='guardian-photo' alt="AS Meeting">
+              <img src = './guardian/AS Meeting Photo Cred - Sarah He2.jpg' class='guardian-photo' alt="AS Meeting">
+              <img src = './guardian/AS Meeting Photo Cred - Sarah He3.jpg' class='guardian-photo' alt="AS Meeting">
+            </div>
+          </div>
+
+          <!--paper-->
+          <div class='guardian-column1'>
+            <div class='guardian-photo-box'>
+              <p id='guardian-description'><b>November 20, 2023</b></p>
+              <img src='./guardian/12_112023SPORTS.jpg' class='guardian-paper'>
+            </div>
+          </div>
+
+          <!--photos-->
+          <div class='guardian-column2'>
+            <div class='guardian-photo-box'>
+              <img src = './guardian/Womens Volleyball Photo Cred - Sarah He1.jpg' class='guardian-photo' alt="Women's Volleyball">
+              <img src = './guardian/Womens Volleyball Photo Cred - Sarah He2.jpg' class='guardian-photo' alt="Women's Volleyball">
+              <img src = './guardian/Womens Volleyball Photo Cred - Sarah He3.jpg' class='guardian-photo' alt="Women's Volleyball">
+            </div>
+          </div>
+
+        </div>
+      </section>
+    
+      <!--footer-->
+      <section id='footer-section'>
         <div class="footer-container">
             <!--email-->
             <a href='mailto:yih092@ucsd.edu'> <button class="footer-button" >
@@ -152,7 +232,7 @@
             <a href='https://www.linkedin.com/in/sarah-he-b901162a2/'> <button class="footer-button">
                 <img src='./images/linkedin_default.png' alt="LinkedIn" id="footer-icon"></a></button>
         </div>
-    </section>
+      </section>
     
 </body>
 </html>

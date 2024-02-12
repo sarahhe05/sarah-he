@@ -156,7 +156,7 @@
 
   #technical-work-header{
     margin-left:20%
-}
+  }
 
   .technical-row{
     position: relative;
@@ -305,6 +305,83 @@
     transform: scale(1.2);
   }
 
+  .access-the-guardian-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    background-color:#152A51;
+    margin-top: 20px; 
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+  }
+
+  .access-the-guardian-button_text {
+    color: #cbdee2;
+  }
+
+  .access-the-guardian-button:hover {
+    background-color:#faf0c3;
+  }
+  
+  .access-the-guardian-button:hover .access-the-guardian-button_text{
+    color: #152A51;
+  }
+
+  /*the-guardian*/
+  #the-guardian-section{
+    padding-top:50px;
+    padding-bottom:35px;
+    display: none;
+  }
+  
+  .guardian-row{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+  }
+
+  .guardian-column1{
+    object-fit: cover;
+    position: relative;
+  }
+
+  .guardian-column2{
+    object-fit: cover;
+  }
+  
+  .guardian-photo-box {
+    object-fit: cover;
+    width: 100%;
+    }
+  
+  #guardian-description{
+    text-align: right;
+    padding-top: 20px;
+    font-size: 25px;
+  }
+
+  .guardian-paper {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+  }
+
+  .guardian-photo {
+    position: relative;
+    width: 85%; 
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+  }
+
   .home-img {
     width: 100%;
     object-fit: cover;
@@ -314,6 +391,7 @@
 
   /*footer*/
   #footer-section{
+    margin-top: 50px;
     background-color: #152A51
     }
 
