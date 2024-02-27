@@ -12,13 +12,9 @@ function toggleGuardian() {
     if (displaySetting == 'block') {
       // clock is visible. hide it
       guardian.style.display = 'none';
-      // change button text
-      guardianButton.innerHTML = 'Show clock';
     }
     else {
       // clock is hidden. show it
       guardian.style.display = 'block';
-      // change button text
-      guardianButton.innerHTML = 'Hide clock';
     }
   }
