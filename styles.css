@@ -93,8 +93,13 @@
   }
 
   #intro{
-    padding-bottom: 50px;
     text-align: center;
+  }
+
+  #introsmall{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 5px;
   }
 
   .contacts-container {
@@ -104,6 +109,7 @@
     justify-content: center;
     margin-left: 30%;
     margin-right: 30%;
+    padding-top: 50px;
     padding-bottom: 250px;
   }
   
@@ -332,8 +338,7 @@
 
   /*the-guardian*/
   #the-guardian-section{
-    padding-top:50px;
-    padding-bottom:35px;
+    padding-top:70px;
     display: none;
   }
   
