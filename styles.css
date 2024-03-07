@@ -272,44 +272,24 @@
     margin-right: 20%;
     padding-bottom: 15px;
   }
-  
+ 
   .photo-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
     margin-left: 25%;
     margin-right: 25%;
-    gap: 10px;
+    gap: 12px;
   }
 
-  #photo-column1{
+  #photo-preview{
     width: 100%;
     object-fit: cover;
+    padding: 5px;
   }
  
-  #photo-column1:hover {
-    transition: all .2s ease-in-out; 
-    transform: scale(1.2);
-  }
-
-  #photo-column2{
-    width: 100%;
-    object-fit: cover;
-  }
- 
-  #photo-column2:hover {
-    transition: all .2s ease-in-out; 
-    transform: scale(1.2);
-  }
-
-  #photo-column3{
-    width: 100%;
-    object-fit: cover;
-  }
- 
-  #photo-column3:hover {
-    transition: all .2s ease-in-out;
-    transform: scale(1.2);
+  #photo-preview:hover {
+    transition: all .1s ease-in-out; 
+    transform: scale(1.05);
   }
 
   .access-the-guardian-button {
