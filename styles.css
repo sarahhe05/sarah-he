@@ -60,7 +60,7 @@
   h3{
     text-align: left;
     color: #152A51;
-    font-size: 10pt;
+    font-size: 12pt;
     font-family: 'Century Gothic';
   }
 
@@ -154,17 +154,42 @@
     transform: scale(1.2);
   }
 
-/*technical-work*/
-  #technical-work-section{
+/*experience*/
+  #experience-section{
     padding-top:35px;
     padding-bottom:35px;
   }
 
-  #technical-work-header{
+  #experience-header{
     margin-left:20%
   }
 
-  .technical-row{
+  #experience-title{
+    margin-left: 20%;
+  }
+
+  #experience-subtitle{
+    margin-left: 20%;
+    padding-bottom: 10px;
+  }
+
+  #experience-description{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 10px;
+  } 
+
+/*projects*/
+  #projects-section{
+    padding-top:35px;
+    padding-bottom:35px;
+  }
+
+  #projects-header{
+    margin-left:20%;
+  }
+
+  .projects-row{
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -174,60 +199,60 @@
   }
 
   @media (max-width: 600px) {
-    .technical-row {
+    .projects-row {
       display: flex;
       flex-wrap: wrap; /* Change to flex-wrap if screen width is less than 600px */
     }
   }
 
-  #technical-title{
+  #projects-title{
     width: 100%;
     object-fit: cover;
   }
 
-  #technical-subtitle{
-    width: 100%;
-    object-fit: cover;
-    padding-bottom: 15px;
-  }
-
-  #technical-description{
+  #projects-subtitle{
     width: 100%;
     object-fit: cover;
     padding-bottom: 15px;
   }
 
-  .technical-column1{
+  #projects-description{
+    width: 100%;
+    object-fit: cover;
+    padding-bottom: 15px;
+  }
+
+  .projects-column1{
     object-fit: cover;
   }
 
-  .technical-photo-box {
+  .projects-photo-box {
     position: relative;
     object-fit: cover;
     width: 100%;
     }
 
-  .technical-button {
+  .projects-button {
     position: absolute;
     top: 50%; /* Adjust as needed */
     left: 50%; /* Adjust as needed */
     transform: translate(-50%, -50%); /* Center the button */
   }
 
-  .technical-photo {
+  .projects-photo {
     position: relative;
     width: auto ; /* Make sure the images fill the container */
     top: 0;
     left: 0;
   }
 
-  #technical-photo{
+  #projects-photo{
     width: 100%;
     object-fit: cover;
     transition: 0.5s ease;
   }
 
-  .technical-button{
+  .projects-button{
     padding: 0;
     border: none;
     background: none;
@@ -235,24 +260,24 @@
     transition: opacity 0.5s ease;
   }
 
-  #technical-button{
+  #projects-button{
     width: 50px;
   }
 
-  .technical-photo-box:hover .technical-button{
+  .projects-photo-box:hover .projects-button{
     opacity: 1;
   }
 
-  .technical-photo-box:hover .technical-photo{
+  .projects-photo-box:hover .projects-photo{
     filter: blur(2px);
   }
 
-  .technical-column1:hover #technical-title{
+  .projects-column1:hover #projects-title{
     transition: all .2s ease-in-out; 
     color: #faf0c3
   }
 
-  .technical-column2:hover #technical-title{
+  .projects-column2:hover #projects-title{
     transition: all .2s ease-in-out; 
     color: #faf0c3
   }
