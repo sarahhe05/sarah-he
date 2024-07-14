@@ -4,6 +4,16 @@
     padding: 0px;
   }
   
+  @font-face {
+    font-family: 'Century Gothic Bold'; /* Name your font */
+    src: url('/Century Gothic/centurygothic_bold.ttf'); /* URL to your font file */
+  }
+
+  @font-face {
+    font-family: 'Century Gothic'; /* Name your font */
+    src: url('/Century Gothic/centurygothic.ttf'); /* URL to your font file */
+  }
+  
   /*style navbar*/
   nav {
     text-align: center;
@@ -46,7 +56,7 @@
     text-align: left;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: 'Century Gothic';
+    font-family: 'Century Gothic Bold';
   }
   
   h2 {
@@ -54,7 +64,7 @@
     color: #152A51;
     font-size: 20pt;
     padding-top: 10px;
-    font-family: 'Century Gothic';
+    font-family: 'Century Gothic Bold';
   }
   
   h3{
