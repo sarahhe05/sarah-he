@@ -194,21 +194,40 @@
     margin-left:20%;
   }
 
-  .projects-row{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3%;
+  .projects-row {
+    display: flex;
     margin-left: 20%;
     margin-right: 20%;
+    margin-bottom: 10px;
   }
 
-  @media (max-width: 600px) {
-    .projects-row {
-      display: flex;
-      flex-wrap: wrap; /* Change to flex-wrap if screen width is less than 600px */
-    }
+  .projects-text-column {
+    width: 60%;
   }
+
+  .projects-gap-column {
+    width: 2.5%;
+  }
+
+  .projects-photo-column {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .projects-text-column, .projects-photo-column {
+        width: 100%; /* Stack columns on top of each other */
+    }
+
+    .projects-row {
+      height: auto; /* Allows the container height to adjust based on content */
+      flex-direction: column; /* Stacks columns vertically */
+  }
+}
 
   #projects-title{
     width: 100%;
@@ -225,23 +244,22 @@
     width: 100%;
     object-fit: cover;
     padding-bottom: 15px;
-  }
-
-  .projects-column1{
-    object-fit: cover;
-  }
-
-  .projects-photo-box {
-    position: relative;
-    object-fit: cover;
-    width: 100%;
-    }
+  }  
 
   .projects-button {
     position: absolute;
     top: 50%; /* Adjust as needed */
     left: 50%; /* Adjust as needed */
     transform: translate(-50%, -50%); /* Center the button */
+    padding: 0;
+    border: none;
+    background: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  #projects-button{
+    width: 50px;
   }
 
   .projects-photo {
@@ -257,32 +275,15 @@
     transition: 0.5s ease;
   }
 
-  .projects-button{
-    padding: 0;
-    border: none;
-    background: none;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-
-  #projects-button{
-    width: 50px;
-  }
-
-  .projects-photo-box:hover .projects-button{
+  .projects-photo-column:hover .projects-button{
     opacity: 1;
   }
 
-  .projects-photo-box:hover .projects-photo{
-    filter: blur(2px);
+  .projects-photo-column:hover .projects-photo{
+    filter: blur(1px);
   }
 
-  .projects-column1:hover #projects-title{
-    transition: all .2s ease-in-out; 
-    color: #faf0c3
-  }
-
-  .projects-column2:hover #projects-title{
+  .projects-row:hover #projects-title{
     transition: all .2s ease-in-out; 
     color: #faf0c3
   }

@@ -26,7 +26,6 @@
         <h1 id="hello">Hello! I am Sarah He :D</h1>
         <h2 id='intro'>second year student at UCSD</h2>
         <h2 id='intro'>Data Science and Cognitive Science</h2>
-        <h2 id='introsmall'>Spec. Machine Learning & Neural Computation</h2>
         <!--contact info-->
         <div class="contacts-container">
         
@@ -43,7 +42,7 @@
               <img src='./images/linkedin_default.png' alt='LinkedIn' class="linkedin"></a></button>
 
           <!--resume-->
-          <a href='./Sarah_He.pdf' target="_blank"> <button class="contacts-button">
+          <a href='./Sarah_He_Resume.pdf' target="_blank"> <button class="contacts-button">
               <img src='./images/resume_default.png' alt='Resume' class="resume"></a></button>
           
         </div>
@@ -53,14 +52,18 @@
       <section id='experience-section'>
 
         <h1 id='experience-header'> Experience </h1>
-
-          <h2 id='experience-title'> The Guardian | <a href='https://ucsdguardian.org/staff_name/sarah-he/'>Data Visualization Staff</a> </h2>
+          <h2 id='experience-title'> Data Science Intern | A Round Entertainment </a> </h2>
+          <h3 id='experience-subtitle'> August 2024 - Present </h3>
+          <p id='experience-description'> I am responsible for collecting artists and concert data through APIs and web scraping, and
+            building machine learning models to predict concert revenue. </p>
+          
+          <h2 id='experience-title'> <a href='https://ucsdguardian.org/staff_name/sarah-he/'> Data Visualization Staff</a> | The Guardian </h2>
             <h3 id='experience-subtitle'> October 2023 - Present </h3>
             <p id='experience-description'> I contribute to UCSD's award-winning student newspaper with weekly 
             publications print and online. As a part of the Data Visualization Section, I aggregate and 
             interpret large data sets to produce informative and interactive graphics. </p>
           
-          <h2 id='experience-title'> The Guardian | Webmaster </h2>
+          <h2 id='experience-title'> Webmaster | The Guardian </h2>
             <h3 id='experience-subtitle'> January 2024 - Present </h3>
             <p id='experience-description'> As Webmaster, I update The Guardian website and maintain 
               staff profiles, publishing articles and photos following each print. </p>
@@ -72,113 +75,167 @@
 
         <h1 id='projects-header'> Projects </h1>
        
-          <div class='projects-row'>
+        <!--EcoMenu-->
+        <div class='projects-row'>
 
-            <!--San Diego Crime Analysis-->
-            <div class='projects-column1'>
-              <h2 id='projects-title'> San Diego Crime Analysis </h2>
-              <h3 id='projects-subtitle'> Data Analysis, Data Visualization | July 2024 </h3>
-      
-              <p id='projects-description'> I cleaned and analyzed data from San Diego Police Department to identify trends 
-                that are present in San Diego crimes over the past 4 years. Using Tableau, I created a dashboard to highlight
-                summary statistics and relevant trends, while allowing users to filter through crime types and get 
-                information specific to those categories.</p>
-            
-              <div class='projects-photo-box'>
-                <img src='./images/San-Diego-Crime-Analysis.jpg' class='projects-photo' id='projects-photo'>
-                <button class='projects-button'><a href='https://github.com/sarahhe05/San-Diego-Crime-Analysis' target="_blank">
-                <img src='./images/link_blue.png' id='projects-button'></a></button>
-              </div>
-            </div>
-
-            <!--Starry Sticker Shop Analysis-->
-            <div class='projects-column1'>
-              <h2 id='projects-title'> Starry Sticker Shop Analysis </h2>
-              <h3 id='projects-subtitle'> Data Analysis, Data Visualization | July 2024 </h3>
-      
-              <p id='projects-description'> Using Python, I analyzed online shop data from the small business I co-founded to 
-                assess sales patterns and customer sentiment. I then created interactive visualizations using Python 
-                and Tableau to showcase shop performance. </p>
-            
-              <div class='projects-photo-box'>
-                <img src='./images/Starry-Sticker-Shop-Sales-Analysis.jpg' class='projects-photo' id='projects-photo'>
-                <button class='projects-button'><a href='https://github.com/sarahhe05/Starry-Sticker-Shop-Analysis' target="_blank">
-                <img src='./images/link_blue.png' id='projects-button'></a></button>
-              </div>
-            </div>
-
+          <div class='projects-text-column'>
+            <h2 id='projects-title'> EcoMenu </h2>
+            <h3 id='projects-subtitle'> Web Development, Data Analysis, Data Visualization | August 2024 </h3>
+    
+            <p id='projects-description'> I collaborated with two teammates to develop this recipe recommendation platform that 
+              suggests users with sustainable recipes based on the carbon footprint of their ingredients. I sourced and cleaned 
+              datasets on the carbon footprint of over 350 food ingredients and 2100 recipes. I contributed to the frontend development
+              of the web application and presented visualizations to showcase insights from the recipe and ingredient data.
+            </p>
           </div>
 
-          <div class='projects-row'>
+          <div class='projects-gap-column'> </div>
 
-            <!--Portfolio Website-->
-            <div class='projects-column1'>
-              <h2 id='projects-title'> Portfolio Website </h2>
-              <h3 id='projects-subtitle'> Web Development | January 2024 - Present </h3>
-      
-              <p id='projects-description'> This website here! I built and designed everything you see on this page from 
-                scratch using HTML/CSS and JavaScript. </p>
-            
-              <div class='projects-photo-box'>
-                <img src='./images/Portfolio_Website.jpg' class='projects-photo' id='projects-photo'>
-              </div>
-            </div>
-
-            <!--Dino Diet-->
-            <div class='projects-column2'>
-              <h2 id='projects-title'> Dino Diet </h2>
-              <h3 id='projects-subtitle'> Machine Learning, Web Development | April 2024 </h3>
-      
-              <p id='projects-description'> At DataHacks, my team and I implemented a XGBoost classifier 
-                that would predict the diet of a dinosaur based on four features with 93% accuracy. We developped a Flask 
-                application for users to selected their own dinosaur features along with data visualizations on 
-                our webpage to showcase our statistics. </p>
-            
-              <div class='projects-photo-box'>
-                <img src='./images/Dino-Diet.jpg' class='projects-photo' id='projects-photo'>
-                <button class='projects-button'><a href='https://youtu.be/9idO-SLj7Es' target="_blank">
-                <img src='./images/link_blue.png' id='projects-button'></a></button>
-              </div>
-            </div>
-
+          <div class='projects-photo-column'>
+            <img src='./images/ECOMENU.jpg' class='projects-photo' id='projects-photo'>
+            <button class='projects-button'><a href='https://github.com/sarahhe05/CirFinCREATE-BoostHacksII-ECOMENU' target="_blank">
+            <img src='./images/link_blue.png' id='projects-button'></a></button>
           </div>
 
-          <div class='projects-row'>
+        </div>
 
-            <!--Pasta Detector-->
-            <div class='projects-column1'>
-              <h2 id='projects-title'> Pasta Detector </h2>
-              <h3 id='projects-subtitle'> Machine Learning, Web Development | February 2024 </h3>
-      
-              <p id='projects-description'> At FullyHacks, I worked in a team of 3 to develop an image 
-              classification web application to distinguish between different pasta types. We trained a 
-              machine learning model to classify pasta images and implemented a frontend web page for users 
-              to upload their own photos. </p>
-            
-              <div class='projects-photo-box'>
-                <img src='./images/Pasta-Detector.jpg' class='projects-photo' id='projects-photo'>
-                <button class='projects-button'><a href='https://github.com/sarahhe05/FullyHacks-PastaDetector' target="_blank">
-                <img src='./images/link_blue.png' id='projects-button'></a></button>
-              </div>
-            </div>
-            
-            <!--Only One Ocean-->
-            <div class='projects-column2'>
-              <h2 id='projects-title'> Only One Ocean </h2>
-              <h3 id='projects-subtitle'> Web Development | July 2021 </h3>
-      
-              <p id='projects-description'> Through Kode with Klossy, I worked in a team of 3 to 
-               program an informative and interactive website regarding ocean protection. </p>
+        <!--San Diego Crime Analysis-->
+        <div class='projects-row'>
 
-              <div class='projects-photo-box'>
-                <img src='./images/Only-One-Ocean.jpg' class='projects-photo' id='projects-photo'>
-                <button class='projects-button'><a href='https://OnlyOneOcean.lmxx.repl.co' target="_blank">
-                <img src='./images/link_blue.png' id='projects-button'></a></button>
-              </div>
-            </div>
+          <div class='projects-photo-column'>
+            <img src='./images/San-Diego-Crime-Analysis.jpg' class='projects-photo' id='projects-photo'>
+            <button class='projects-button'><a href='https://github.com/sarahhe05/San-Diego-Crime-Analysis' target="_blank">
+            <img src='./images/link_blue.png' id='projects-button'></a></button>
+          </div>
           
+          <div class='projects-gap-column'> </div>
+
+          <div class='projects-text-column'>
+            <h2 id='projects-title'> San Diego Crime Analysis </h2>
+            <h3 id='projects-subtitle'> Data Analysis, Data Visualization | July 2024 </h3>
+    
+            <p id='projects-description'> I cleaned and analyzed data from San Diego Police Department to identify trends 
+              that are present in San Diego crimes over the past 4 years. Using Tableau, I created a dashboard to highlight
+              summary statistics and relevant trends, while allowing users to filter through crime types and get 
+              information specific to those categories.
+            </p>
           </div>
-  
+
+        </div>
+        
+        <!--Starry Sticker Shop Analysis-->
+        <div class='projects-row'>
+
+          <div class='projects-text-column'>
+            <h2 id='projects-title'> Starry Sticker Shop Analysis </h2>
+            <h3 id='projects-subtitle'> Data Analysis, Data Visualization | July 2024 </h3>
+      
+            <p id='projects-description'> Using Python, I analyzed online shop data from the small business I co-founded to 
+              assess sales patterns and customer sentiment. I then created interactive visualizations using Python 
+              and Tableau to showcase shop performance.
+            </p>
+          </div>
+          
+          <div class='projects-gap-column'> </div>
+
+          <div class='projects-photo-column'>
+            <img src='./images/Starry-Sticker-Shop-Sales-Analysis.jpg' class='projects-photo' id='projects-photo'>
+            <button class='projects-button'><a href='https://github.com/sarahhe05/Starry-Sticker-Shop-Analysis' target="_blank">
+            <img src='./images/link_blue.png' id='projects-button'></a></button>
+          </div>
+        
+        </div>
+
+        <!--Portfolio Website-->
+        <div class='projects-row'>
+
+          <div class='projects-photo-column'>
+            <img src='./images/Portfolio_Website.jpg' class='projects-photo' id='projects-photo'>
+          </div>
+          
+          <div class='projects-gap-column'> </div>
+
+          <div class='projects-text-column'>
+            <h2 id='projects-title'> Portfolio Website </h2>
+            <h3 id='projects-subtitle'> Web Development | January 2024 - Present </h3>
+      
+            <p id='projects-description'> This website here! I built and designed everything you see on this page from 
+            scratch using HTML/CSS and JavaScript.
+            </p>
+          </div>
+
+        </div>
+
+        <!--Dino Diet-->
+        <div class='projects-row'>
+
+          <div class='projects-text-column'>
+            <h2 id='projects-title'> Dino Diet </h2>
+            <h3 id='projects-subtitle'> Machine Learning, Web Development | April 2024 </h3>
+      
+            <p id='projects-description'> At DataHacks, my team and I implemented a XGBoost classifier 
+              that would predict the diet of a dinosaur based on four features with 93% accuracy. We developped a Flask 
+              application for users to selected their own dinosaur features along with data visualizations on 
+              our webpage to showcase our statistics.
+            </p>
+          </div>
+          
+          <div class='projects-gap-column'> </div>
+
+          <div class='projects-photo-column'>
+            <img src='./images/Dino-Diet.jpg' class='projects-photo' id='projects-photo'>
+            <button class='projects-button'><a href='https://youtu.be/9idO-SLj7Es' target="_blank">
+            <img src='./images/link_blue.png' id='projects-button'></a></button>
+          </div>
+        
+        </div>
+
+        <!--Pasta Detector-->
+        <div class='projects-row'>
+
+          <div class='projects-photo-column'>
+            <img src='./images/Pasta-Detector.jpg' class='projects-photo' id='projects-photo'>
+            <button class='projects-button'><a href='https://github.com/sarahhe05/FullyHacks-PastaDetector' target="_blank">
+            <img src='./images/link_blue.png' id='projects-button'></a></button>
+          </div>
+          
+          <div class='projects-gap-column'> </div>
+
+          <div class='projects-text-column'>
+            <h2 id='projects-title'> Pasta Detector </h2>
+            <h3 id='projects-subtitle'> Machine Learning, Web Development | February 2024 </h3>
+    
+            <p id='projects-description'> At FullyHacks, I worked in a team of 3 to develop an image 
+            classification web application to distinguish between different pasta types. We trained a 
+            machine learning model to classify pasta images and implemented a frontend web page for users 
+            to upload their own photos.
+            </p>
+          </div>
+
+        </div>
+
+        <!--Only One Ocean-->
+        <div class='projects-row'>
+
+          <div class='projects-text-column'>
+            <h2 id='projects-title'> Only One Ocean </h2>
+            <h3 id='projects-subtitle'> Web Development | July 2021 </h3>
+      
+            <p id='projects-description'> Through Kode with Klossy, I worked in a team of 3 to 
+              program an informative and interactive website regarding ocean protection.
+            </p>
+          </div>
+          
+          <div class='projects-gap-column'> </div>
+
+          <div class='projects-photo-column'>
+            <img src='./images/Only-One-Ocean.jpg' class='projects-photo' id='projects-photo'>
+            <button class='projects-button'><a href='https://OnlyOneOcean.lmxx.repl.co' target="_blank">
+            <img src='./images/link_blue.png' id='projects-button'></a></button>
+          </div>
+        
+        </div>
+   
       </section>
 
       <!--other-->
