@@ -33,7 +33,7 @@
     text-decoration: none;
     color: #cbdee2;
     padding: 14px;
-    font-family: 'Century Gothic';
+    font-family: 'Century Gothic', Verdana;
   }
   
   li a:hover {
@@ -51,7 +51,7 @@
     text-align: left;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: 'Century Gothic';
+    font-family: 'Century Gothic', Verdana;
   }
   
   h2 {
@@ -59,19 +59,19 @@
     color: #152A51;
     font-size: 20pt;
     padding-top: 10px;
-    font-family: 'Century Gothic';
+    font-family: 'Century Gothic', Verdana;
   }
   
   h3{
     text-align: left;
     color: #152A51;
     font-size: 12pt;
-    font-family: 'Century Gothic';
+    font-family: 'Century Gothic', Verdana;
   }
 
   p {
     font-size: 12pt;
-    font-family: 'Century Gothic';
+    font-family: 'Century Gothic', Verdana;
     color: #152A51;
   }
 
