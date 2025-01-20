@@ -14,14 +14,15 @@
     <nav>
         <ul>
           <li><a href='index.html'><b>home</b></a></li>
-          <li><a href='#experience-section'><b>experience</b></a></li>
-          <li><a href='#projects-section'><b>projects</b></a></li>
-          <li><a href='#other-section'><b>other</b></a></li>
+          <li><a href='#experience'><b>experience</b></a></li>
+          <li><a href='#projects'><b>projects</b></a></li>
+          <li><a href='#other'><b>other</b></a></li>
+          <li><a href='./Sarah_He_Resume.pdf' target="_blank"><b>resume</b></a></li>
         </ul>
       </nav>
   
       <!--home page-->
-      <section id='home-section'>
+      <section id='home'>
 
         <h1 id="hello">Hello! I am Sarah He :D</h1>
         <h2 id='intro'>second year Data Science student at UCSD</h2>
@@ -48,7 +49,7 @@
       </section>
     
       <!--experience-->
-      <section id='experience-section'>
+      <section id='experience'>
 
         <h1 id='experience-header'> Experience </h1>
           <h2 id='experience-title'> Data Science & Human Resources Intern | A Round Entertainment </a> </h2>
@@ -82,178 +83,145 @@
       </section>
 
       <!--projects-->
-      <section id='projects-section'>
-
+      <section id='projects'>
         <h1 id='projects-header'> Projects </h1>
-       
-        <!--Major Power Outage Analysis-->
-        <div class='projects-row'>
-
-          <div class='projects-photo-column'>
-            <img src='./images/Major-Power-Outage-Analysis.png' class='projects-photo' id='projects-photo'>
-            <button class='projects-button'><a href='https://sarahhe05.github.io/Major-Power-Outage-Analysis/' target="_blank">
-            <img src='./images/link_blue.png' id='projects-button'></a></button>
-          </div>
+        <div class="projects">
           
-          <div class='projects-gap-column'> </div>
+          <!--Major Power Outage Analysis-->
+          <article>
+            <h2>Major Power Outage Analysis</h2>
+            <h3>Machine Learning, Hypothesis Testing</h3>
 
-          <div class='projects-text-column'>
-            <h2 id='projects-title'> Major Power Outage Analysis </h2>
-            <h3 id='projects-subtitle'> Machine Learning, Hypothesis Testing | December 2024 </h3>
-    
-            <p id='projects-description'> I analyzed power outage data to identify factors driving severity, 
+            <div class="projects-photo-container">
+              <a href="https://sarahhe05.github.io/Major-Power-Outage-Analysis/" target="_blank">
+                <img src="./images/Major-Power-Outage-Analysis.png" class="projects-photo" alt="Major Power Outage Analysis">
+                <div class="hover-icon">🔗</div>
+              </a>
+            </div>
+
+            <p>I analyzed power outage data to identify factors driving severity, 
               focusing on regional and infrastructural influences. Using exploratory data analysis, 
               feature engineering, and hyperparameter tuning, I developed a logistic regression model predicting 
               severe outages with 85% accuracy while minimizing bias across climate categories. Additionally, 
               I conducted permutation testing to assess missingness dependency, evaluate fairness, and uncover key trends.
             </p>
-          </div>
+          </article>
 
-        </div>
-        
-        <!--EcoMenu-->
-        <div class='projects-row'>
+          <!--EcoMenu-->
+          <article>
+            <h2>EcoMenu</h2>
+            <h3>Web Development, Data Analysis, Data Visualization</h3>
+              
+            <div class="projects-photo-container">
+              <a href="https://github.com/sarahhe05/CirFinCREATE-BoostHacksII-ECOMENU" target="_blank">
+                <img src="./images/ECOMENU.jpg" class="projects-photo" alt="EcoMenu">
+                <div class="hover-icon">🔗</div>
+                </a>
+            </div>
 
-          <div class='projects-text-column'>
-            <h2 id='projects-title'> EcoMenu </h2>
-            <h3 id='projects-subtitle'> Web Development, Data Analysis, Data Visualization | August 2024 </h3>
-    
-            <p id='projects-description'> I collaborated with two teammates to develop this recipe recommendation platform that 
+            <p>I collaborated with two teammates to develop this recipe recommendation platform that 
               suggests users with sustainable recipes based on the carbon footprint of their ingredients. I sourced and cleaned 
               datasets on the carbon footprint of over 350 food ingredients and 2100 recipes. I contributed to the frontend development
               of the web application and presented visualizations to showcase insights from the recipe and ingredient data.
             </p>
-          </div>
+            </article>
 
-          <div class='projects-gap-column'> </div>
+          <!--San Diego Crime Analysis-->
+          <article>
+            <h2>San Diego Crime Analysis</h2>
+            <h3>Data Analysis, Data Visualization</h3>
+            
+            <div class="projects-photo-container">
+            <a href="https://github.com/sarahhe05/San-Diego-Crime-Analysis" target="_blank">
+            <img src="./images/San-Diego-Crime-Analysis.jpg" class="projects-photo" alt="San Diego Crime Analysis">
+            <div class="hover-icon">🔗</div>
+              </a>
+            </div>
 
-          <div class='projects-photo-column'>
-            <img src='./images/ECOMENU.jpg' class='projects-photo' id='projects-photo'>
-            <button class='projects-button'><a href='https://github.com/sarahhe05/CirFinCREATE-BoostHacksII-ECOMENU' target="_blank">
-            <img src='./images/link_blue.png' id='projects-button'></a></button>
-          </div>
-
-        </div>
-
-        <!--San Diego Crime Analysis-->
-        <div class='projects-row'>
-
-          <div class='projects-photo-column'>
-            <img src='./images/San-Diego-Crime-Analysis.jpg' class='projects-photo' id='projects-photo'>
-            <button class='projects-button'><a href='https://github.com/sarahhe05/San-Diego-Crime-Analysis' target="_blank">
-            <img src='./images/link_blue.png' id='projects-button'></a></button>
-          </div>
-          
-          <div class='projects-gap-column'> </div>
-
-          <div class='projects-text-column'>
-            <h2 id='projects-title'> San Diego Crime Analysis </h2>
-            <h3 id='projects-subtitle'> Data Analysis, Data Visualization | July 2024 </h3>
-    
-            <p id='projects-description'> I cleaned and analyzed data from San Diego Police Department to identify trends 
+            <p>I cleaned and analyzed data from San Diego Police Department to identify trends 
               that are present in San Diego crimes over the past 4 years. Using Tableau, I created a dashboard to highlight
               summary statistics and relevant trends, while allowing users to filter through crime types and get 
               information specific to those categories.
             </p>
-          </div>
+          </article>
 
-        </div>
-        
-        <!--Starry Sticker Shop Analysis-->
-        <div class='projects-row'>
+          <!--Starry Sticker Shop Analysis-->
+          <article>
+            <h2>Starry Sticker Shop Analysis</h2>
+            <h3>Data Analysis, Data Visualization</h3>
+              
+            <div class="projects-photo-container">
+              <a href="https://github.com/sarahhe05/Starry-Sticker-Shop-Analysis" target="_blank">
+                <img src="./images/Starry-Sticker-Shop-Sales-Analysis.jpg" class="projects-photo" alt="Starry Sticker Shop Analysis">
+                <div class="hover-icon">🔗</div>
+              </a>
+            </div>
+              
 
-          <div class='projects-text-column'>
-            <h2 id='projects-title'> Starry Sticker Shop Analysis </h2>
-            <h3 id='projects-subtitle'> Data Analysis, Data Visualization | July 2024 </h3>
-      
-            <p id='projects-description'> Using Python, I analyzed online shop data from the small business I co-founded to 
+            <p>Using Python, I analyzed online shop data from the small business I co-founded to 
               assess sales patterns and customer sentiment. I then created interactive visualizations using Python 
               and Tableau to showcase shop performance.
             </p>
-          </div>
-          
-          <div class='projects-gap-column'> </div>
+          </article>
 
-          <div class='projects-photo-column'>
-            <img src='./images/Starry-Sticker-Shop-Sales-Analysis.jpg' class='projects-photo' id='projects-photo'>
-            <button class='projects-button'><a href='https://github.com/sarahhe05/Starry-Sticker-Shop-Analysis' target="_blank">
-            <img src='./images/link_blue.png' id='projects-button'></a></button>
-          </div>
-        
-        </div>
+          <!--Portfolio Website-->
+          <article>
+            <h2>Portfolio Website</h2>
+            <h3>Web Development</h3>
+            
+            <div class="projects-photo-container">
+              <img src="./images/Portfolio_Website.jpg" class="projects-photo" alt="San Diego Crime Analysis">
+            </div>
 
-        <!--Portfolio Website-->
-        <div class='projects-row'>
-
-          <div class='projects-photo-column'>
-            <img src='./images/Portfolio_Website.jpg' class='projects-photo' id='projects-photo'>
-          </div>
-          
-          <div class='projects-gap-column'> </div>
-
-          <div class='projects-text-column'>
-            <h2 id='projects-title'> Portfolio Website </h2>
-            <h3 id='projects-subtitle'> Web Development | January 2024 - Present </h3>
-      
-            <p id='projects-description'> This website here! I built and designed everything you see on this page from 
-            scratch using HTML/CSS and JavaScript.
+            <p>This website here! I built and designed everything you see on this page from 
+              scratch using HTML/CSS and JavaScript.
             </p>
-          </div>
+          </article>
 
-        </div>
+          <!--Dino Diet-->
+          <article>
+            <h2>Dino Diet</h2>
+            <h3>Machine Learning, Web Development</h3>
+              
+            <div class="projects-photo-container">
+              <a href="https://youtu.be/9idO-SLj7Es" target="_blank">
+                <img src="./images/Dino-Diet.jpg" class="projects-photo" alt="Dino Diet">
+                <div class="hover-icon">🔗</div>
+              </a>
+            </div>
 
-        <!--Dino Diet-->
-        <div class='projects-row'>
-
-          <div class='projects-text-column'>
-            <h2 id='projects-title'> Dino Diet </h2>
-            <h3 id='projects-subtitle'> Machine Learning, Web Development | April 2024 </h3>
-      
-            <p id='projects-description'> At DataHacks, my team and I implemented a XGBoost classifier 
+            <p>At DataHacks, my team and I implemented a XGBoost classifier 
               that would predict the diet of a dinosaur based on four features with 93% accuracy. We developped a Flask 
               application for users to selected their own dinosaur features along with data visualizations on 
               our webpage to showcase our statistics.
             </p>
-          </div>
-          
-          <div class='projects-gap-column'> </div>
+          </article>
+            
+          <!--Pasta Detector-->
+          <article>
+            <h2>Pasta Detector</h2>
+            <h3>Machine Learning, Web Development | February 2024</h3>
+              
+            <div class="projects-photo-container">
+              <a href="https://github.com/sarahhe05/FullyHacks-PastaDetector" target="_blank">
+                <img src="./images/Pasta-Detector.jpg" class="projects-photo" alt="Pasta Detector">
+                <div class="hover-icon">🔗</div>
+              </a>
+            </div>
 
-          <div class='projects-photo-column'>
-            <img src='./images/Dino-Diet.jpg' class='projects-photo' id='projects-photo'>
-            <button class='projects-button'><a href='https://youtu.be/9idO-SLj7Es' target="_blank">
-            <img src='./images/link_blue.png' id='projects-button'></a></button>
-          </div>
-        
-        </div>
-
-        <!--Pasta Detector-->
-        <div class='projects-row'>
-
-          <div class='projects-photo-column'>
-            <img src='./images/Pasta-Detector.jpg' class='projects-photo' id='projects-photo'>
-            <button class='projects-button'><a href='https://github.com/sarahhe05/FullyHacks-PastaDetector' target="_blank">
-            <img src='./images/link_blue.png' id='projects-button'></a></button>
-          </div>
-          
-          <div class='projects-gap-column'> </div>
-
-          <div class='projects-text-column'>
-            <h2 id='projects-title'> Pasta Detector </h2>
-            <h3 id='projects-subtitle'> Machine Learning, Web Development | February 2024 </h3>
-    
-            <p id='projects-description'> At FullyHacks, I worked in a team of 3 to develop an image 
-            classification web application to distinguish between different pasta types. We trained a 
-            machine learning model to classify pasta images and implemented a frontend web page for users 
-            to upload their own photos.
+            <p>At FullyHacks, I worked in a team of 3 to develop an image 
+              classification web application to distinguish between different pasta types. We trained a 
+              machine learning model to classify pasta images and implemented a frontend web page for users 
+              to upload their own photos.
             </p>
-          </div>
-
+          </article>
+            
         </div>
-        
       </section>
+      
 
       <!--other-->
-      <section id='other-section'>
+      <section id='other'>
       <h1 id='other-header'> Other </h1>
         
         <h2 id='photography-header'> Photography </h2>
@@ -301,7 +269,7 @@
       </section>
 
       <!--the guardian-->
-      <section id='the-guardian-section'>
+      <section id='the-guardian'>
         <div class='guardian-row'>
           
           <!--paper-->
@@ -403,7 +371,7 @@
       </section>
     
       <!--footer-->
-      <section id='footer-section'>
+      <section id='footer'>
         <div class="footer-container">
             <!--email-->
             <a href='mailto:sarahhe725@gmail.com' target="_blank"> <button class="footer-button" >

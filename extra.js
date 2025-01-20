@@ -1,5 +1,5 @@
 function toggleGuardian() {
-    var guardian = document.getElementById('the-guardian-section');
+    var guardian = document.getElementById('the-guardian');
     var displaySetting = guardian.style.display;
     if (displaySetting == 'block') {
       guardian.style.display = 'none';

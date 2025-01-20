@@ -85,7 +85,7 @@
   }
 
   /*home*/
-  #home-section{
+  #home{
     background-image: url('./images/header.jpg');
     background-position: 50% 90%;
     background-size: cover;
@@ -160,7 +160,7 @@
   }
 
 /*experience*/
-  #experience-section{
+  #experience{
     padding-top:35px;
     padding-bottom:35px;
   }
@@ -185,111 +185,76 @@
   } 
 
 /*projects*/
-  #projects-section{
+  #projects{
     padding-top:35px;
     padding-bottom:35px;
   }
 
   #projects-header{
     margin-left:20%;
+    margin-right:20%;
   }
 
-  .projects-row {
-    display: flex;
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 1.5em; 
+    padding-top: 1em;
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 10px;
+  }
+  
+  .projects article {
+    display: grid;
+    grid-template-rows: subgrid;
+    gap: 1em;
+    background-color: #f6f5ed; 
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    grid-row: span 4;
   }
 
-  .projects-text-column {
-    width: 60%;
-  }
-
-  .projects-gap-column {
-    width: 2.5%;
-  }
-
-  .projects-photo-column {
-    width: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    object-fit: cover;
-  }
-
-  @media (max-width: 768px) {
-    .projects-text-column, .projects-photo-column {
-        width: 100%; /* Stack columns on top of each other */
-    }
-
-    .projects-row {
-      height: auto; /* Allows the container height to adjust based on content */
-      flex-direction: column; /* Stacks columns vertically */
-  }
-}
-
-  #projects-title{
-    width: 100%;
-    object-fit: cover;
-  }
-
-  #projects-subtitle{
-    width: 100%;
-    object-fit: cover;
-    padding-bottom: 15px;
-  }
-
-  #projects-description{
-    width: 100%;
-    object-fit: cover;
-    padding-bottom: 15px;
-  }  
-
-  .projects-button {
-    position: absolute;
-    top: 50%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
-    transform: translate(-50%, -50%); /* Center the button */
-    padding: 0;
-    border: none;
-    background: none;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-
-  #projects-button{
-    width: 50px;
+  .projects-photo-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      grid-row: 3; /* Ensure this is always in the third row */
   }
 
   .projects-photo {
-    position: relative;
-    width: auto ; /* Make sure the images fill the container */
-    top: 0;
-    left: 0;
+      width: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease, filter 0.5s ease;
   }
 
-  #projects-photo{
-    width: 100%;
-    object-fit: cover;
-    transition: 0.5s ease;
+  .projects-photo-container:hover .projects-photo {
+      transform: scale(1.05);
+      filter: blur(1px);
   }
 
-  .projects-photo-column:hover .projects-button{
-    opacity: 1;
+  .projects-photo-container .hover-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 0.5em;
+    display: none; /* Hidden initially */
+    cursor: pointer;
+    transition: transform 0.3s ease;
   }
 
-  .projects-photo-column:hover .projects-photo{
-    filter: blur(1px);
-  }
-
-  .projects-row:hover #projects-title{
-    transition: all .2s ease-in-out; 
-    color: #faf0c3
+  .projects-photo-container:hover .hover-icon {
+    display: block;
+    transform: translate(-50%, -50%) scale(1.1); /* Slight grow effect */
   }
 
   /*other*/
-  #other-section{
+  #other{
     padding-top:35px;
     padding-bottom:35px;
   }
@@ -354,7 +319,7 @@
   }
 
   /*the-guardian*/
-  #the-guardian-section{
+  #the-guardian{
     padding-top:70px;
     display: none;
   }
@@ -425,7 +390,7 @@
   }
 
   /*footer*/
-  #footer-section{
+  #footer{
     margin-top: 50px;
     background-color: #152A51
     }
