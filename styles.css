@@ -274,25 +274,78 @@
     margin-right: 20%;
     padding-bottom: 15px;
   }
- 
-  .photo-container{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin-left: 20%;
-    margin-right: 20%;
-    gap: 12px;
-  }
 
   #photo-preview{
     width: 100%;
     object-fit: cover;
-    padding: 5px;
   }
  
   #photo-preview:hover {
     transition: all .1s ease-in-out; 
     transform: scale(1.05);
   }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+    /* Responsive layout - three columns */
+  @media screen and (max-width: 992px) {
+    .column {
+      flex: 33.33%;
+      max-width: 33.33%;
+    }
+  }
+
+  /* Responsive layout - two columns */
+  @media screen and (max-width: 768px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  /* Responsive layout - one column */
+  @media screen and (max-width: 576px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .access-the-guardian-button {
     position: absolute;
