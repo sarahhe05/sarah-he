@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="timeline.js" defer></script>
+  <title>Tech | Sarah He</title>
+</head>
+
+<body>
+  <!--navigation bar-->
+  <nav>
+    <ul>
+      <li><a href="index.html"><b>home</b></a></li>
+      <li><a href="tech.html" class="active"><b>tech</b></a></li>
+      <li><a href="photography.html"><b>photography</b></a></li>
+      <li><a href="./Sarah_He_Resume.pdf" target="_blank"><b>resume</b></a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+
+    <!--experience-->
+    <section id="experience">
+      <div class="section-header">
+        <h1>Experience</h1>
+        <a href="./Sarah_He_Resume.pdf" target="_blank" class="button">View full resume</a>
+      </div>
+
+      <!-- hover or click a point to see the role -->
+      <div class="timeline">
+        <ol class="tl-list">
+        <li class="tl-item active">
+          <button type="button" class="tl-point">
+            <span class="tl-dot"></span>
+            <span class="tl-meta"><span class="tl-date">Now</span><span class="tl-org">Capital One</span></span>
+          </button>
+          <div class="tl-detail">
+            <h3 class="tl-role">Data Analyst</h3>
+            <p class="tl-when">Capital One | Now</p>
+            <p>Data analyst at Capital One, joined after graduating from UC San Diego.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <button type="button" class="tl-point">
+            <span class="tl-dot"></span>
+            <span class="tl-meta"><span class="tl-date">Nov 2025 - Aug 2026</span><span class="tl-org">UC San Diego</span></span>
+          </button>
+          <div class="tl-detail">
+            <h3 class="tl-role">Power Transformation Lab Research Assistant</h3>
+            <p class="tl-when">UC San Diego | November 2025 - August 2026</p>
+            <p>Engineered Python ETL pipelines for international trade data, monitoring live ingestion and diagnosing production anomalies through logging frameworks. Used AI coding assistants to optimize API data extraction, adding dynamic batching and exponential backoff retries. Worked with senior researchers on database automation supporting low-carbon energy and climate research.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <button type="button" class="tl-point">
+            <span class="tl-dot"></span>
+            <span class="tl-meta"><span class="tl-date">Jun - Aug 2025</span><span class="tl-org">Capital One</span></span>
+          </button>
+          <div class="tl-detail">
+            <h3 class="tl-role">Data Analyst Intern</h3>
+            <p class="tl-when">Capital One | June 2025 - August 2025</p>
+            <p>Designed and implemented SQL-based compliance controls that automated manual audit procedures on a centralized platform. Resolved issues in legacy compliance logic, removing 85% of false positives. Consolidated fragmented datasets into a centralized data mart for consistent reporting.</p>
+            <img class="tl-photo" src="./images/c1.jpeg" alt="Capital One">
+          </div>
+        </li>
+        <li class="tl-start">
+          <span class="tl-dot"></span>
+          <span class="tl-meta"><span class="tl-date">Sep 2023 - Jun 2026</span><span class="tl-org">B.S. Data Science, UC San Diego</span></span>
+        </li>
+        </ol>
+        <div class="tl-panel-col" aria-live="polite"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--footer-->
+  <footer>
+    <div class="footer-container">
+      <a href="mailto:sarahhe725@gmail.com" target="_blank"><img src="./images/email_default.png" alt="Email" class="footer-icon"></a>
+      <a href="https://github.com/sarahhe05" target="_blank"><img src="./images/github_default.png" alt="Github" class="footer-icon"></a>
+      <a href="https://www.linkedin.com/in/sarahhe2005/" target="_blank"><img src="./images/linkedin_default.png" alt="LinkedIn" class="footer-icon"></a>
+    </div>
+  </footer>
+</body>
+</html>
