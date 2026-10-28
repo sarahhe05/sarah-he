@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
 /* ---------- base ---------- */
 * {
   margin: 0;
@@ -10,17 +12,15 @@
   --sky: #cbdee2;
   --cream: #f8f9d7;
   --card: #f6f5ed;
-  --font: 'Century Gothic', Verdana, sans-serif;
-}
-
-@font-face {
-  font-family: 'Century Gothic';
-  src: url('./Century Gothic/centurygothic.ttf');
+  
+  /* CENTRAL FONT CONFIGURATION: Change these two lines to update fonts across your entire site! */
+  --font-heading: 'Fraunces', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
 }
 
 body {
   background-color: var(--sky);
-  font-family: var(--font);
+  font-family: var(--font-body);
   color: var(--navy);
   min-height: 100vh;
   display: flex;
@@ -29,32 +29,39 @@ body {
 
 h1 {
   color: var(--navy);
-  font-size: 35pt;
+  font-size: 36pt;
+  font-family: var(--font-heading);
+  font-weight: 600;
   text-align: left;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: var(--font);
+  letter-spacing: -0.01em;
 }
 
 h2 {
+  font-family: var(--font-heading);
+  font-weight: 600;
   text-align: left;
   color: var(--navy);
-  font-size: 20pt;
+  font-size: 22pt;
   padding-top: 10px;
-  font-family: var(--font);
+  padding-bottom: 16px;
+  letter-spacing: -0.01em;
 }
 
 h3 {
+  font-family: var(--font-heading);
+  font-weight: 600;
   text-align: left;
   color: var(--navy);
-  font-size: 12pt;
-  font-family: var(--font);
+  font-size: 14pt;
 }
 
 p {
   font-size: 12pt;
-  font-family: var(--font);
+  font-family: var(--font-body);
   color: var(--navy);
+  line-height: 1.6;
 }
 
 a {
@@ -65,11 +72,11 @@ a:hover {
   text-decoration: underline;
 }
 
-/* shared page wrapper (replaces the old 20% side margins) */
+/* shared page wrapper */
 .page {
   flex: 1 0 auto;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 35px 24px;
 }
@@ -77,7 +84,8 @@ a:hover {
 /* ---------- navbar ---------- */
 nav {
   text-align: center;
-  font-size: 16pt;
+  font-size: 15pt;
+  font-family: var(--font-body);
   position: sticky;
   z-index: 10;
   top: 0;
@@ -98,7 +106,9 @@ nav li a {
   text-decoration: none;
   color: var(--sky);
   padding: 14px;
-  font-family: var(--font);
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 nav li a:hover,
@@ -121,7 +131,9 @@ nav li a.active {
 }
 
 #hello {
-  font-size: 50pt;
+  font-family: var(--font-heading);
+  font-size: 52pt;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -172,8 +184,9 @@ nav li a.active {
   border-radius: 8px;
   border: none;
   text-decoration: none;
-  font-family: var(--font);
-  font-size: 12pt;
+  font-family: var(--font-body);
+  font-size: 11pt;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -259,15 +272,17 @@ nav li a.active {
 }
 
 .tl-date {
+  font-family: var(--font-body);
   font-size: 11pt;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .tl-org {
+  font-family: var(--font-body);
   font-size: 10pt;
 }
 
-/* education: the starting point of the timeline, not an interactive role */
+/* education: the starting point of the timeline */
 .tl-start {
   display: flex;
   align-items: center;
@@ -290,35 +305,61 @@ nav li a.active {
   right: 0;
   top: 0;
   background: var(--card);
-  padding: 18px 22px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 22px 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: top .25s ease;
 }
 
 .tl-role {
-  font-size: 16pt;
+  font-family: var(--font-heading);
+  font-size: 18pt;
   padding-bottom: 2px;
 }
 
 .tl-when {
+  font-family: var(--font-body);
   font-size: 10pt;
-  padding-bottom: 10px;
+  font-weight: 600;
+  padding-bottom: 12px;
+  opacity: 0.85;
 }
 
-.tl-panel p:last-child,
-.tl-detail p:last-of-type {
-  line-height: 1.5;
+.tl-panel p,
+.tl-detail p {
+  line-height: 1.6;
+}
+
+.tl-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.tl-body p {
+  flex: 1;
 }
 
 .tl-photo {
   display: block;
-  width: 100%;
-  max-height: 160px;
+  flex: 0 0 auto;
+  width: 180px;
+  height: auto;
+  border-radius: 0;
   object-fit: cover;
-  margin-top: 12px;
 }
 
-/* without JavaScript, every role is simply listed with its description */
+/* fallback layout */
+.tl-detail-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.tl-detail-content p {
+  flex: 1;
+}
+
+/* without JavaScript */
 .timeline:not(.js) {
   display: block;
 }
@@ -337,7 +378,6 @@ nav li a.active {
 
 /* ---------- photography page ---------- */
 .photo-intro p {
-  max-width: 750px;
   line-height: 1.6;
   padding-bottom: 14px;
 }
@@ -346,8 +386,6 @@ nav li a.active {
   padding-top: 45px;
 }
 
-/* gallery: justified rows that keep every photo's real aspect ratio.
-   gallery.js sets --ar (width / height) on each item once its image loads. */
 .gallery {
   --row: 230px;
   display: flex;
@@ -355,7 +393,6 @@ nav li a.active {
   gap: 8px;
 }
 
-/* keeps the last row from stretching to full width */
 .gallery::after {
   content: "";
   flex-grow: 100;
@@ -420,9 +457,10 @@ nav li a.active {
 .lightbox-prev { left: 8px; top: 50%; transform: translateY(-50%); }
 .lightbox-next { right: 8px; top: 50%; transform: translateY(-50%); }
 
-/* Guardian feature: page viewer (left) + rotating photo carousel (right) */
+/* Guardian feature */
 .press-title {
-  font-size: 14pt;
+  font-family: var(--font-heading);
+  font-size: 15pt;
   padding-bottom: 4px;
 }
 
@@ -468,7 +506,6 @@ nav li a.active {
   height: auto;
 }
 
-/* only one page at a time once the script is running */
 .pages-viewer.js .press-item {
   display: none;
 }
@@ -503,11 +540,13 @@ nav li a.active {
 }
 
 .viewer-counter {
+  font-family: var(--font-body);
   min-width: 3ch;
   text-align: center;
 }
 
 .viewer-caption {
+  font-family: var(--font-body);
   text-align: center;
   font-size: 10pt;
   padding-top: 4px;
@@ -524,7 +563,6 @@ nav li a.active {
   opacity: 1;
 }
 
-/* contain keeps both portrait and landscape photos uncropped */
 .carousel-slide img {
   display: block;
   width: 100%;
@@ -578,8 +616,10 @@ footer {
   .gallery { --row: 170px; }
   .guardian-feature { grid-template-columns: 1fr; }
   .viewer-stage, .carousel-stage { height: 380px; }
+  .tl-photo { width: 120px; }
+  .tl-body, .tl-detail-content { flex-direction: column; }
   .timeline { gap: 18px; grid-template-columns: minmax(120px, 1fr) 1.6fr; }
-  #hello { font-size: 32pt; }
+  #hello { font-size: 36pt; }
   nav { font-size: 12pt; }
   nav li a { padding: 8px; }
 }
